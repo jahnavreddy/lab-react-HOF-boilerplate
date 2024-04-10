@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-export default class HigherOrderComponent6 extends Component {
+class HigherOrderComponent6 extends Component {
     render() {
         const { data } = this.props
         let filtereddata = data.filter(elem => elem.user_type=="Designer").reduce((a,b)=>a.years+b.years)
@@ -15,3 +15,5 @@ export default class HigherOrderComponent6 extends Component {
         )
       }
 }
+
+export default HigherOrderComponent6

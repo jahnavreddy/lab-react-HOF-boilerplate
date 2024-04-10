@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-export default class HigherOrderComponent4 extends Component {
+class HigherOrderComponent4 extends Component {
     render() {
         const { data } = this.props
         let filtereddata = data.filter(elem => elem.name[0]=="J")
@@ -24,3 +24,5 @@ export default class HigherOrderComponent4 extends Component {
         )
       }
 }
+
+export default HigherOrderComponent4

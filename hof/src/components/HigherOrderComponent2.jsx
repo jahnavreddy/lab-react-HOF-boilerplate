@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-export default class HigherOrderComponent2 extends Component {
+class HigherOrderComponent2 extends Component {
     render() {
         const { data } = this.props
         console.log(data)
@@ -23,3 +23,5 @@ export default class HigherOrderComponent2 extends Component {
         )
     }
 }
+
+export default HigherOrderComponent2
